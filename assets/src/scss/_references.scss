@@ -1,0 +1,23 @@
+.reference {
+    display: inline-block;
+    border: 1px solid $gray-1;
+    padding: 4rem;
+    margin-bottom: 4rem;
+
+    p {font-size: 1.2rem;}
+
+    .button {
+        @include button;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .reference {
+        padding: 2rem;
+
+    }
+}
+
+.our-moto {
+    margin-bottom: 2rem;
+}

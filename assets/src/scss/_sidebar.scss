@@ -1,0 +1,33 @@
+#sidebar-page-layout, .sidebar-page-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+
+    @media only screen and (max-width : 768px) {
+        grid-template-columns: 1fr;
+    }
+
+    .the-content {
+        margin-bottom: 4rem;
+    }    
+}
+
+.sidebar {
+       
+    li {list-style-type: disc; margin-left: 2rem;}
+    .textwidget {
+        h3 {font-size: 1rem; padding: 0; margin: 0;}
+        p, .button {display: none;}
+    }
+    .ttl {
+        font-size: 2.5rem;
+    }
+    li a {
+        color: $orange;
+        &:hover {
+            color: $gray-1;
+        }
+    }
+}
+
+

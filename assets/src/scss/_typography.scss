@@ -1,0 +1,48 @@
+html {
+    font: 13px/1.8 'PT Serif Caption', 'PT Serif', 'PT Sans', sans-serif;
+
+    @media only screen and (max-width: 700px) {
+        font: 18px/1.6 'PT Sans', sans-serif;
+    }
+
+    @media only screen and (max-width: 900px) {
+        font: 16px/1.6 'PT Sans', sans-serif;
+    }
+}
+
+body, form, input, button, select, option, fieldset, legend {
+    font: inherit;
+    color: $white-1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 0.8rem;
+}
+
+h1 { font-size: 2.6em;}
+h2 { font-size: 2em;}
+h3 { font-size: 1.6em;}
+h4 { font-size: 1.4em;}
+h5 { font-size: 1.2em;}
+h6 { font-size: 1em;}
+
+p {
+    padding-bottom: 1.5em;
+    // color: $gray-8;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+    font-weight: normal;
+    font-family: 'PT Serif Caption', sans-serif;
+
+    &:hover {
+        text-decoration: none;
+        color: $orange;
+    }
+}
+
+li {
+    list-style-type: none;
+}

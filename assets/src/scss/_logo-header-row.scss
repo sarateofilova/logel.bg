@@ -1,0 +1,51 @@
+.logo.mobile {display: none;}
+
+#logoWrap {
+    background: white;
+    padding: 2rem 0;
+}
+
+.logorow {
+    display: flex;
+    justify-content: space-between;
+
+    .headerLogoMiddle {
+        text-align: center;
+    }
+
+    .text-logo-header {
+        display: block;
+        color: $blue;
+        font-size: 4rem;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width : 1000px) {
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .logo.mobile {
+        display: block;
+        
+        img {
+            background: $white-1;
+            max-width: 90px;
+        }
+    }
+
+    #logoWrap {
+        display: none;
+    }
+    .logorow {
+        display: block;
+    }
+}
+
+

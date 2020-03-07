@@ -1,0 +1,150 @@
+// Front-page post grid 
+.front-page {
+    .textwidget ul {
+    display: flex;
+    padding: 3rem 1rem;
+    background: #b9b4a2;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+    
+        li {
+            color: $gray-2;
+            padding: 1rem;
+            width: 33.33333%;
+            display:flex; 
+            flex-direction:column; 
+            justify-content: baseline;
+            &:last-child {
+                margin: 0;
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            h3 { font-size: 1.9rem;}
+            b, strong {font-weight: normal !important;}
+            p {flex: 1;}
+
+            a {color: inherit;}
+
+            .button {
+                @include button;
+            }
+        }
+    }
+    .pt-cv-wrapper {
+        padding: 4rem 2rem;
+        
+        .pt-cv-page {
+            display: flex;
+            flex-wrap: wrap;
+
+            @media only screen and (max-width: 700px) {
+                flex-direction: column;
+
+            }
+        }
+
+        .pt-cv-colsys .pt-cv-content-item {
+            flex: 1;
+        }
+
+        .pt-cv-ifield {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        .pt-cv-title a { 
+            font-size: 2rem;
+            color: $gray-2 !important;
+        }
+
+        .pt-cv-content {
+            color: $gray-2;
+            display: flex;
+            flex-wrap: wrap;
+            height: 80%;
+            align-content: space-between;
+            .pt-cv-readmore {
+                background: #d7d7d7;
+                border: none;
+                color: inherit;
+                padding: 1rem 2rem;
+                margin-top: 2rem;
+
+                &:hover {
+                    background: $white-1;
+                }
+            }
+        }
+    }
+
+    //Front-page Partners section
+
+    #panel-w5e3c72f4bb7f2-0-0-0{
+        margin-bottom: 0 !important;
+    }
+
+    .sow-image-grid-wrapper {
+        text-align: left !important;
+        @media only screen and (max-width: 700px) {
+            text-align: center !important;
+        }
+    }
+
+    //Front-page News section
+    .rpwe-thumb {
+        border: none !important;
+    }
+    .rpwe-title {
+        padding: 0;
+        margin: 0;
+        a {
+            font-size: 1.4rem;
+            color: $orange;
+        }
+    }
+    
+
+    .rpwe-summary {
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1.5 !important;
+
+        .more-link {
+            @include button;
+            margin-top: 1rem;
+        }
+    }
+    .rpwe-block li {
+        border-bottom: 1px solid $gray-1 !important;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    @media only screen and (max-width: 700px) {
+        .rpwe-li {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    // List Pages Products, News, Services
+    .so-panel {
+        margin-bottom: 0 !important;
+    }
+    .ow-icon-placement-left {
+        @include button;
+    }
+
+
+}
+.wp-block-separator {
+    color: $white !important;
+    border-top: 1px solid $white-1;
+}

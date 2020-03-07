@@ -1,0 +1,146 @@
+.cities {
+    .cities-content {
+        display: flex;  
+    }
+    .the-wp-content {
+        display: block;
+        flex: 0 0 50%;
+        margin-right: 4rem;
+        .panel-grid {
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+
+        .widget-title {
+            font-size: 1rem;
+            padding: 0;
+            padding-top: 0.5rem;
+            margin: 0;
+            border: none;
+        }
+        
+    }
+    .the-php-content {
+        max-width: 100%;        
+    }
+
+    table {
+        max-width: 100%;
+        background-color: transparent;
+        border-collapse: collapse;
+        border-spacing: 0;
+        @media only screen and (max-width: 450px) {
+            word-break: break-all;
+        }
+        
+        tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+            td, th {
+                display: table-cell;
+                vertical-align: inherit;
+                padding: 0.3rem;
+
+            }
+        }
+        
+    }
+
+    .flex-control-paging li a {
+        background: $white-1 !important;
+    }
+    .flex-control-paging li a.flex-active {
+        background: $orange !important;
+    }
+    .metaslider .caption-wrap {
+        background: $orange !important;
+        color: black !important;
+        font-size: 1.1rem !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .cities-content {
+            flex-wrap: wrap;
+            .the-wp-content {
+                flex: 0 0 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .metaslider .flex-control-nav {
+        bottom: -3rem !important;
+        line-height: 1rem !important;
+    }
+    .the-php-content {
+        margin-top: 2rem;
+    }
+}
+
+//Plovdiv
+.metaslider #metaslider_5536 .flex-control-nav {
+    bottom: -5.5rem !important;
+    line-height: 1.5rem !important;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    .metaslider #metaslider_5536 .flex-control-nav {
+        bottom: -4.5rem !important;
+    }
+    #the-php-content_5475 {
+        margin-top: 3rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .metaslider #metaslider_5536 .flex-control-nav {
+        bottom: -7.5rem !important;
+        line-height: 1.5rem !important;
+    }
+
+    #the-php-content_5475 {
+        margin-top: 6rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .metaslider #metaslider_5536 .flex-control-nav {
+        bottom: -7rem !important;
+        line-height: 1.2rem !important;
+    }
+}
+
+//Sofia
+.metaslider #metaslider_5750 .flex-control-nav {
+    bottom: -6.5rem !important;
+    line-height: 1.5rem !important;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+    #the-php-content_5597 {
+        margin-top: 4.5rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .metaslider #metaslider_5750 .flex-control-nav {
+        bottom: -9rem !important;
+        line-height: 1.5rem !important;
+    }
+
+    #the-php-content_5597 {
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .metaslider #metaslider_5750 .flex-control-nav {
+        bottom: -12rem !important;
+        line-height: 1.5rem !important;
+    }
+
+    #the-php-content_5597 {
+        margin-top: 10rem;
+    }
+}
+

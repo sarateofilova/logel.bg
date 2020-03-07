@@ -1,0 +1,41 @@
+#news {
+    .the-post {
+        margin-bottom: 2rem;
+        .post-title {
+            color: $orange;
+        }
+        .post-content {
+            margin-top: 1rem;
+            .post-date {
+                color: $orange;
+                margin-bottom: 0.5rem;
+            }
+            .post-excerpt {
+                a {
+                    display: inline-block;
+                }
+            }
+            .button {
+                @include button;
+            }
+        } 
+    }
+    
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+    .current {
+        color: $orange;
+    }
+    & > * {
+        padding: 1rem 1rem;
+        background: rgba(239, 239, 239, 0.2);
+    }
+    @media only screen and (max-width : 600px) {
+        .prev, .next {display: none;}
+    }
+}

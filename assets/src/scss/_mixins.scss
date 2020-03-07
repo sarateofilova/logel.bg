@@ -1,0 +1,28 @@
+@mixin box-padding {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@mixin button {
+    font-size: 1rem !important;
+    color: $gray-2 !important;
+    text-transform: uppercase !important;
+    background: #d7d7d7 !important;
+    border: none !important;
+    padding: 1rem 2rem !important;
+    display: inline-block !important;
+    font-weight: 400 !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+    touch-action: manipulation !important;
+    border-radius: 4px !important;
+    user-select: none !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065) !important;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) !important;
+
+
+    &:hover {
+        background: $white-1 !important;
+
+    }
+}

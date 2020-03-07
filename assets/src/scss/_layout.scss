@@ -1,0 +1,44 @@
+body {
+    background-color: rgba($blue, 1);
+}
+
+.col-lg-12 {
+    @include box-padding;
+}
+
+.menuCol {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.widget-title {
+    display: block;
+    font-size: 3rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.1rem solid $gray-1;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.page-container, 
+.page-references,
+.blog-container, 
+.about-us {
+    margin-bottom: 2rem;
+}
+
+.panel-grid {
+    margin-bottom: 4rem;
+}
+
+.post-container {
+    padding-top: 2rem;
+    p {display: inline-block;}
+    img { margin: 1.5rem 0;}
+}
+.alignleft {
+    float: left;
+}

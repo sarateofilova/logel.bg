@@ -1,0 +1,14 @@
+.contacts {
+    .sow-google-map-canvas {
+        height: 300px !important;
+    }
+    hr {
+        border-top: 1px solid $white-1;
+    }
+    input, textarea {
+        background: $white-1 !important;
+    }
+    button {
+        @include button;
+    }
+}

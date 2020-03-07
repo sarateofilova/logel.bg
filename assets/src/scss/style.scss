@@ -1,0 +1,33 @@
+/*
+Theme Name: skeleton
+Theme URI: https://webstation.bg
+Author: Anton Demirev & Nikifor Kostadinov
+Author URI: https://webstation.bg
+Description: A clean SEO starter theme based on Bootstrap
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: SEO, SASS, clean, speed, bootstrap 4 (js & css), jquery, font-awesome
+Text Domain: skeleton
+*/
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "typography";
+@import "layout";
+
+@import "logo-header-row";
+@import "breadcrumb-nav";
+@import "footer";
+
+@import "front-page";
+@import "sidebar";
+@import "about-us";
+@import "products";
+@import "contacts";
+@import "news";
+@import "gallery";
+@import "cities";
+@import "references";
+
+@import "nav-bar-menu";

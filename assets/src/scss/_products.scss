@@ -1,0 +1,141 @@
+#page-products {
+    display: flex;
+    flex-wrap: nowrap;
+    
+
+    .col-sm-12 {
+        flex: unset;
+    }
+
+    .products-sidebar {
+        width: 35%;
+        .button, p {display: none;}
+        .ttl {
+            font-size: 2.5rem;
+        }
+        li {
+            margin-left: 1rem;
+            list-style: disc;
+            padding: 0;
+            h3, a {
+                display: block;
+                font-size: 1rem;
+                color: $orange;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    .product-childpages {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        .attorney {
+            flex: 0 0 30%;
+            max-width: 300px;
+            margin-bottom: 5rem;
+            display: flex;
+            flex-direction: column;
+    
+            .inside-items {
+                display: block;
+                margin-bottom: 1.5rem;
+            }
+    
+            .title {
+                flex: 1;
+                text-transform: uppercase;
+                color: $orange;
+                font-size: 1.1rem;
+            }
+    
+            .image {
+                img {
+                    border: 5px solid $white-1;
+                }
+            }
+    
+            .button {
+                @include button;
+                margin: 0 auto 0 0;
+            }
+        }
+    }
+
+    @media only screen and (max-width : 780px) {
+        flex-wrap: wrap;
+        .products-sidebar {
+            width: 100%;
+            order: 1;
+        }
+    }
+}
+
+.products-grandchildren {
+    margin: 2rem 0;
+    p {
+        padding-bottom: 1rem;
+        margin: 0;
+        max-width: 70rem;
+    }
+    .textwidget {
+        li {list-style: disc; margin-left: 2rem;}
+        img {margin-bottom: 1.5rem;}
+    }
+    .buttons-wrap {
+        margin-bottom: 2rem;
+        align-items: center !important;
+        display: inline-flex !important;
+        .panel-grid {
+            margin-bottom: 0;
+            display: inline-flex;
+            align-items: center !important;
+            
+        }
+        .button {
+            @include button;
+            margin-right: 2rem;
+            &:hover {
+                color: $gray-2;
+            }
+            span {color: $gray-2;}
+        }
+    }
+   
+    .sow-slider-base {
+        max-width: 738px;
+    }
+    a {
+        color: $orange;
+    }
+
+    // H C D images
+
+    
+    .panel-grid {
+        margin-bottom: 0;
+    }
+    .h-c-d-images {
+        
+        .widget-title {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            border: none;
+        }
+    }
+    h2 {font-size: 3rem;}
+    h4 {font-size: 1.8rem;}
+    table {
+        border-color: #fcfcfc;
+        text-align: center;
+
+        th, td {padding: 0 1rem;}
+
+        th {background: #696c85;}
+        td {background: #6974c7;}
+    }
+    .alignright {float: right; margin-left: 2rem;}
+    .alignleft {float: left; margin-right: 2rem;}
+}

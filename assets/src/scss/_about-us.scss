@@ -1,0 +1,20 @@
+.about-us {
+    blockquote {
+        color: $gray-1;
+    }
+    blockquote:before {
+        content: "\f10d";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        height: auto;
+        width: 30px;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        position: relative;
+        border: none;
+        float: left;
+        font-size: 27px;
+        color: $orange;
+    }
+}

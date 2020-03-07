@@ -1,0 +1,14 @@
+.breadcrumb-nav {
+    .breadcrumbs {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            padding-right: 0.3rem;
+            color: $gray-1;
+
+            a {
+                color: $orange;
+            }
+        }
+    }
+}
